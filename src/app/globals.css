@@ -1,11 +1,22 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'queen';
+  src: url('/font/main.ttf');
+}
+@font-face {
+  font-family: 'king';
+  src: url('/font/sub.ttf');
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --main: #cdac89;
+  --main-light: #ead2b8;
+  --main-text: #5b320e;
 }
 
-@theme inline {
+/* @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -23,4 +34,66 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+} */
+body {
+  position: relative;
+  background: linear-gradient(to bottom, #cdac89 0%,#ead2b8 30%,#cdac89 100%);
+  color: #5b320e;
+  font-family: 'queen';
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('/bg/noise.jpg');
+  background-position: 0;
+  background-size: cover;
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+*{
+  outline: none;
+}
+
+.vintage-btn {
+  position: relative;
+  padding: 0 70px;
+  width: fit-content;
+  white-space: nowrap;
+}
+
+.vintage-btn .border-mask {
+  position: absolute;
+  inset: 0;
+  border: 4px double #5a3925;
+  border-radius: 12px;
+
+  -webkit-mask-image:
+    radial-gradient(circle 80px at 0% 100%, transparent 60%, black 61%);
+  mask-image:
+    radial-gradient(circle 80px at 0% 100%, transparent 60%, black 61%);
+
+  pointer-events: none;
+}
+
+.vintage-btn .decoration {
+  pointer-events: none;
+  background-image: url(/bg/decoration.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 190px;
+  height: 90px;
+  position: absolute;
+  bottom: -46px;
+  left: -50px;
+  z-index: 3;
+}
+
+.vintage-btn .label {
+  position: relative;
+  z-index: 5;
+  font-size: var(--text-5xl);
+  color: #5a3925;
 }
