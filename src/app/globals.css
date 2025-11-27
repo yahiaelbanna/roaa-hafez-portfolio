@@ -14,6 +14,7 @@
   --main: #cdac89;
   --main-light: #ead2b8;
   --main-text: #5b320e;
+  --main-white: #e2cfbc;
 }
 
 /* @theme inline {
@@ -148,4 +149,55 @@ body::before {
   aspect-ratio: 16 / 10;
   bottom: 0;
   transform: translateY(10%);
+}
+
+/*  */
+
+.about-section::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  aspect-ratio: 300 / 19;
+  background: url('/bg/closure.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%,-100%);
+  z-index: -2;
+}
+
+.divided{
+  width: 100%;
+  position: relative;
+}
+.divided::after, .divided::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-48%);
+  height: 50px;
+  aspect-ratio: 5 / 1;
+  background: url('/bg/divide.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.divided::before{
+  top: 100%;
+  transform: translate(-48%,-150%);
+}
+
+.about-image::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  aspect-ratio: 1;
+  background: url('/bg/singleStar.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  transform: translate(-50%, -60px);
 }

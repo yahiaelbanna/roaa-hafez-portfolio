@@ -1,13 +1,15 @@
+import About from "./components/home/about";
 import Hero from "./components/home/hero";
 import Nav from "./components/layout/nav";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center">
+    <div className="flex flex-col min-h-screen items-center justify-center">
       <Nav />
       <main className="flex min-h-screen w-full flex-col items-center justify-between px-5 md:px-30 sm:items-start">
         <Hero/>
       </main>
+        <About />
     </div>
   );
 }
