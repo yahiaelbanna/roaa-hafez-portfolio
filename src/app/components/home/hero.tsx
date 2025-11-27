@@ -1,5 +1,4 @@
-
-// import Image from "next/image";
+import Image from "next/image";
 
 export default function Hero() {
     return (
@@ -17,6 +16,13 @@ export default function Hero() {
                             </div>
 
                         </div>
+                    <div className="flex justify-end items-center">
+                        <div className="hero-image-container">
+                            <div className="hero-image">
+                                <Image src={'/photo/roaa.jpeg'} width={500} height={500} alt="Roaa Hafez" className="object-cover h-full"/>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>

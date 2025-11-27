@@ -97,3 +97,55 @@ body::before {
   font-size: var(--text-5xl);
   color: #5a3925;
 }
+
+/*  */
+
+.hero-image-container{
+  position: relative;
+  width: 450px;
+  aspect-ratio: 119/150;
+  /* overflow: hidden; */
+}
+.hero-image,.hero-image-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-image{
+  position: relative;
+  overflow: hidden;
+  /* width: calc(100% - 30px); */
+  /* height: calc(100% - 100px); */
+  width: 400px;
+  aspect-ratio: 152 / 179;
+  box-shadow: 0 0 300px -70px var(--main-text);
+}
+.hero-image-container::after,.hero-image-container::before{
+  content: '';
+  position: absolute;
+}
+.hero-image-container::after{
+  width: 450px;
+  aspect-ratio: 119/150;
+  background: url('/bg/frame.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.hero-image-container::before{
+  /* background: radial-gradient(circle, var(--main-text), transparent);
+  width: 90%;
+  aspect-ratio: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  border-radius: 100%;
+  box-shadow: 0 0 300px var(--main-text); */
+  background: url('/bg/stars.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 120%;
+  aspect-ratio: 16 / 10;
+  bottom: 0;
+  transform: translateY(10%);
+}
