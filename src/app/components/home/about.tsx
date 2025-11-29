@@ -13,7 +13,8 @@ export default function About() {
                     </div>
                     <div>
                         <h2 className="text-9xl mb-14 -translate-x-8">Who is Roaa ?</h2>
-                        <p className="text-5xl font-[king] mb-5">An Egyptian Ui Ux Designer passiont in the modern and smiple designs. stuides at faculty of computers and informatics since 2023.</p>
+                        {/* <p className="text-5xl font-[king] mb-5">An Egyptian Ui Ux Designer passiont in the modern and smiple designs. stuides at faculty of computers and informatics since 2023.</p> */}
+                        <p className="text-5xl font-[king] mb-5">An Egyptian UI/UX designer passionate about modern and simple design. She has been studying at the Faculty of Computers and Informatics since 2023, continuously developing her skills and exploring new creative approaches to user-centered design.</p>
                         <ul className="flex gap-3">
                             <li>
                                 <a href="#" className="rounded-lg p-2 border border-(--main-text) w-fit block">

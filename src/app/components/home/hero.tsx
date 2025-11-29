@@ -8,7 +8,7 @@ export default function Hero() {
                     <div className="grid grid-cols-1 md:grid-cols-2 justify-center min-h-screen">
                         <div className="flex flex-col justify-center gap-10">
                             <h2 className="text-9xl text-(--main-text)">Roaa Hafez</h2>
-                            <p className="text-5xl font-[king]">An Egyptian girl who loves the creative beauty, Love the sky and the simplicity.</p>
+                            <p className="text-5xl font-[king]">An Egyptian girl who loves the sky, simplicity, and creativity.</p>
                             <div className="vintage-btn">
                                 <span className="border-mask"></span>
                                 <span className="decoration"></span>
