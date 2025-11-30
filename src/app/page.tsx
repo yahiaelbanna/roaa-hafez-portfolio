@@ -1,4 +1,5 @@
 import About from "./components/home/about";
+import Contact from "./components/home/contact";
 import Hero from "./components/home/hero";
 import LifeEvents from "./components/home/lifeEvents";
 import Projects from "./components/home/projects";
@@ -12,8 +13,9 @@ export default function Home() {
         <Hero/>
       </div>
         <About />
-      <div className="flex w-full flex-col items-center justify-between px-5 md:px-30 sm:items-start py-25">
+      <div className="flex w-full flex-col items-center justify-between px-5 md:px-30 sm:items-start pt-25 pb-10">
         <Projects/>
+        <Contact/>
       </div>
         {/* <LifeEvents /> */}
     </div>
