@@ -9,12 +9,16 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen items-center justify-center">
       <Nav />
-      <div className="flex min-h-screen w-full flex-col items-center justify-between px-5 md:px-30 sm:items-start">
+      <section className="flex min-h-screen w-full flex-col items-center justify-between px-5 md:px-30 sm:items-start" id="home">
         <Hero/>
-      </div>
+      </section>
+      <section id="about">
         <About />
+      </section>
       <div className="flex w-full flex-col items-center justify-between px-5 md:px-30 sm:items-start pt-25 pb-10">
-        <Projects/>
+        <section id="projects">
+          <Projects/>
+        </section>
         <Contact/>
       </div>
         {/* <LifeEvents /> */}
