@@ -16,7 +16,9 @@ export default function Home() {
       </section>
       <section className="flex w-full flex-col items-center justify-between px-5 md:px-30 sm:items-start pt-10 lg:pt-25 pb-10 relative z-20" id="projects">
         <Projects/>
+        <div className="w-full">
             <div className="divide my-5"></div>
+        </div>
       </section>
       <section className="w-full pt-10 bg-(--main-white) relative z-10 border-t-2 border-t-(--main-text)/40" id="contact">
         <Contact/>

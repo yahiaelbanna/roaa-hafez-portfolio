@@ -69,6 +69,7 @@ body::before {
   padding: 0 70px;
   width: fit-content;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .vintage-btn .border-mask {
@@ -104,6 +105,48 @@ body::before {
   font-size: var(--text-5xl);
   color: #5a3925;
 }
+
+.vintage-btn {
+  transition: transform 0.25s ease;
+}
+
+.vintage-btn:hover {
+  transform: translateY(-2px);
+}
+
+.vintage-btn .border-mask {
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.vintage-btn:hover .border-mask {
+  border-color: #7a4a2f;
+  box-shadow: 0 0 6px rgba(90, 57, 37, 0.4);
+}
+
+.vintage-btn .decoration {
+  opacity: 0.65;
+  transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+.vintage-btn:hover .decoration {
+  opacity: 1;
+  filter: drop-shadow(0 0 4px rgba(90, 57, 37, 0.4));
+}
+.vintage-btn .border-mask {
+  --borderColor: #5a3925;
+  border: 4px double var(--borderColor);
+  transition: border-color 0.4s ease;
+}
+
+.vintage-btn:hover .border-mask {
+  --borderColor: #8b5a37;
+}
+.vintage-btn:hover .border-mask {
+  box-shadow:
+    inset 0 0 20px rgba(160, 120, 80, 0.35),
+    0 0 10px rgba(90, 57, 37, 0.25);
+}
+
 
 /*  */
 

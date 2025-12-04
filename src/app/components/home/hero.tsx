@@ -9,11 +9,11 @@ export default function Hero() {
                     <div className="order-2 lg:order-1 flex flex-col justify-center gap-10 items-center lg:items-start pb-16">
                         <h2 className="text-8xl md:text-9xl text-(--main-text)">Roaa Hafez</h2>
                         <p className="text-5xl font-[king] text-center lg:text-start">An Egyptian girl who loves the sky, simplicity, and creativity.</p>
-                        <div className="vintage-btn lg:scale-none scale-[0.8]">
+                        <a className="vintage-btn lg:scale-none scale-[0.8]" href="#contact">
                             <span className="border-mask"></span>
                             <span className="decoration"></span>
                             <span className="label">Contact me</span>
-                        </div>
+                        </a>
                     </div>
                     <div className="order-1 lg:order-2 flex lg:justify-end items-center justify-center">
                         <div className="hero-image-container">
