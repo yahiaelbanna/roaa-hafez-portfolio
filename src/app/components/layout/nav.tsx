@@ -23,25 +23,24 @@ const Links = [
 
 const [active, setActive] = useState("home");
 
-  useEffect(() => {
-    const sections = document.querySelectorAll("section");
+useEffect(() => {
+  const sections = document.querySelectorAll("section");
 
-    const options = {
-      threshold: 0.6,
-    };
-
-    const observer = new IntersectionObserver((entries) => {
+  const observer = new IntersectionObserver(
+    (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setActive(entry.target.id);
         }
       });
-    }, options);
+    },
+    { threshold: 0.3 }
+  );
 
-    sections.forEach((section) => observer.observe(section));
+  sections.forEach((section) => observer.observe(section));
 
-    return () => observer.disconnect();
-  }, []);
+  return () => observer.disconnect();
+}, [])
 
 const activeClasses = 'bg-(--main-text) text-(--main-light)';
     return (

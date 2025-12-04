@@ -110,7 +110,7 @@ body::before {
 .hero-image-container{
   position: relative;
   /* width: 450px; */
-  height: 70vh;
+  height: 60vh;
   aspect-ratio: 119/150;
   /* overflow: hidden; */
 }
@@ -135,7 +135,7 @@ body::before {
 }
 .hero-image-container::after{
   /* width: 450px; */
-  height: 70vh;
+  height: inherit;
   aspect-ratio: 119/150;
   background: url('/bg/frame.svg');
   background-repeat: no-repeat;
@@ -162,21 +162,32 @@ body::before {
 
 /*  */
 
-.about-section::before{
+.about-section::before,.about-section::after{
   content: '';
   position: absolute;
-  width: 100%;
-  aspect-ratio: 300 / 19;
-  background: url('/bg/closure.svg');
+  width: 200%;
+  /* aspect-ratio: 300 / 19; */
+  aspect-ratio: 30 / 1;
+  background: url('/bg/closure2.svg');
   background-repeat: no-repeat;
   background-size: cover;
-  top: 20px;
+  top: 0;
   left: 50%;
-  transform: translate(-50%,-100%);
-  z-index: -2;
+  transform: translate(-50%,-23%);
+  z-index: 1;
+}
+.about-section::before{
+  top: 100%;
+  transform: translate(-50%,-75%) rotate(-180deg);
+
+}
+@media (width >= 64rem /* 1024px */) {
+  .about-section::before,.about-section::after{
+    width: 100%;
+  }
 }
 
-.divided{
+/* .divided{
   width: 100%;
   position: relative;
 }
@@ -195,7 +206,7 @@ body::before {
 .divided::before{
   top: 100%;
   transform: translate(-48%,-150%);
-}
+} */
 
 .about-image::before{
   content: '';

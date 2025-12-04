@@ -5,7 +5,7 @@ export default function Contact() {
     return (
         <>
             <div className="divide mt-15"></div>
-            <section className="mt-15" id="contact">
+            {/* <section className="mt-15" id="contact"> */}
                 <h2 className="text-9xl">Reach me</h2>
                 <ul className="flex gap-3 mt-15 text-3xl">
                             <li>
@@ -25,7 +25,7 @@ export default function Contact() {
                                 </a>
                             </li>
                         </ul>
-            </section>
+            {/* </section> */}
         </>
     );
 }
