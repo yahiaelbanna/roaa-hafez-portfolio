@@ -18,7 +18,7 @@ export default function Hero() {
                     <div className="order-1 lg:order-2 flex lg:justify-end items-center justify-center">
                         <div className="hero-image-container">
                             <div className="hero-image">
-                                <Image src={'/photo/roaaHafez.jpg'} width={500} height={500} alt="Roaa Hafez" className="object-cover h-full"/>
+                                <Image src={'/photo/roaa-hafez.jpg'} width={500} height={500} alt="Roaa Hafez" className="object-cover h-full"/>
                             </div>
                         </div>
                     </div>

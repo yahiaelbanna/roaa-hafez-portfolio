@@ -211,7 +211,7 @@ body::before {
   width: 200%;
   /* aspect-ratio: 300 / 19; */
   aspect-ratio: 30 / 1;
-  background: url('/bg/closure2.svg');
+  background: url('/bg/line-closure.svg');
   background-repeat: no-repeat;
   background-size: cover;
   top: 0;
