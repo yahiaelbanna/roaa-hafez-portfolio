@@ -36,7 +36,7 @@ export default function Contact() {
         <>
             {/* <div className="divide"></div> */}
             {/* <section className="mt-15" id="contact"> */}
-            <div  className="grid grid-cols-1 mt-10 md:grid-cols-2 w-full lg:px-30 ">
+            <div  className="grid grid-cols-1 mt-10 md:grid-cols-2 w-full lg:px-30 gap-10 md:gap0">
                 <div>
                     <h2 className="text-8xl">Follow me</h2>
                     <ul className="flex gap-3 mt-10 ps-5 flex-wrap text-3xl">
